@@ -1,0 +1,376 @@
+/* =========================================================
+   DÉPANNAGE INFORMATIQUE — identité pro jaune/orangé
+   Quarto + Bootstrap friendly — Mobile-first
+   ========================================================= */
+
+/* ---------- 1) Variables ---------- */
+:root{
+  /* Neutres */
+  --ink:#0f172a;                 /* ardoise foncée */
+  --text:rgba(15,23,42,.92);
+  --muted:rgba(15,23,42,.72);
+  --bg:#ffffff;
+  --panel:rgba(15,23,42,.04);
+  --border:rgba(15,23,42,.12);
+
+  /* Accent jaune/orangé */
+  --accent:#f59e0b;              /* amber */
+  --accent-2:#f97316;            /* orange chaud */
+  --accent-strong:#ea580c;       /* orange plus profond */
+  --accent-soft:rgba(245,158,11,.18);
+
+  /* Ombres */
+  --shadow-1:0 12px 28px rgba(2,6,23,.12);
+  --shadow-2:0 20px 52px rgba(2,6,23,.18);
+
+  /* Rayons */
+  --r-lg:22px;
+  --r-md:18px;
+  --r-sm:14px;
+
+  /* Layout */
+  --nav-h:72px;
+
+  /* Transitions */
+  --t-fast:.15s ease;
+  --t-med:.20s ease;
+}
+
+@media (max-width:768px){
+  :root{ --nav-h:84px; }
+}
+
+/* ---------- 2) Base ---------- */
+*{ box-sizing:border-box; }
+html, body{ overflow-x:hidden; }
+
+body{
+  margin:0;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.62;
+  padding-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+}
+
+p, li{ color:var(--muted); }
+strong{ color:var(--ink); }
+
+h1,h2,h3{
+  color:var(--ink);
+  letter-spacing:-.02em;
+}
+h1{ line-height:1.12; }
+h2{ line-height:1.22; }
+
+a{
+  color:var(--accent-strong);
+  text-decoration:none;
+}
+a:hover{ text-decoration:underline; text-underline-offset:3px; }
+
+img, iframe, video{ max-width:100%; height:auto; }
+
+/* Mobile: éviter les césures bizarres */
+@media (max-width:768px){
+  h1,h2,h3{
+    hyphens:none;
+    -webkit-hyphens:none;
+    overflow-wrap:normal;
+    word-break:normal;
+  }
+  :where(p,li){
+    overflow-wrap:break-word;
+    word-break:normal;
+  }
+}
+
+/* ---------- 3) Navbar (si tu en as une) ---------- */
+.navbar{
+  position:fixed !important;
+  top:0; left:0; right:0;
+  z-index:1200;
+  background:#0b1220 !important;
+  box-shadow:0 10px 26px rgba(2,6,23,.22);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link{
+  color:#fff !important;
+}
+
+.navbar .nav-link{
+  opacity:.92;
+  font-weight:800;
+}
+.navbar .nav-link:hover{ opacity:1; }
+.navbar .navbar-brand{
+  white-space:normal;
+  line-height:1.12;
+}
+
+/* ---------- 4) HERO ---------- */
+.hero-band{
+  background:
+    radial-gradient(900px 480px at 70% 15%, rgba(245,158,11,.28), transparent 62%),
+    radial-gradient(600px 380px at 10% 80%, rgba(249,115,22,.18), transparent 60%),
+    linear-gradient(180deg, #0b1220, #0f172a);
+  color:#fff;
+  padding:1.2rem 0 1.05rem;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.hero-band :where(h1,h2,h3,p,li,small,span,strong,em,a){
+  color:#fff !important;
+}
+
+.hero-title{
+  font-size: clamp(1.65rem, 2.7vw + 1rem, 2.65rem);
+  margin:0 0 .45rem;
+  text-shadow:0 2px 14px rgba(0,0,0,.35);
+}
+
+.hero-subtitle{
+  font-size: clamp(1.05rem, 1.2vw + .8rem, 1.45rem);
+  opacity:.94;
+  margin:0 0 .75rem;
+}
+
+/* Mobile: hero plus compact pour voir les boutons vite */
+@media (max-width:768px){
+  .hero-band{ padding: 1rem 0 .9rem; }
+  .hero-title{ font-size: 1.55rem; }
+  .hero-subtitle{ font-size: 1.05rem; }
+}
+
+/* ---------- 5) CTA / Boutons ---------- */
+.btn{
+  border-radius:999px;
+  padding:.82rem 1.1rem;
+  font-weight:850;
+  text-decoration:none !important;
+  box-shadow:0 14px 30px rgba(2,6,23,.18);
+  transition: transform var(--t-fast), box-shadow var(--t-fast), filter var(--t-fast), background var(--t-fast), border-color var(--t-fast);
+}
+
+.btn:focus-visible{
+  outline:3px solid rgba(245,158,11,.55);
+  outline-offset:2px;
+}
+
+.btn-primary{
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  border-color:transparent;
+  color:#0b1220 !important;
+  box-shadow:
+    0 16px 36px rgba(245,158,11,.28),
+    0 0 0 0 rgba(245,158,11,.0);
+}
+
+.btn-primary:hover{
+  transform: translateY(-1px);
+  filter: saturate(1.05);
+  box-shadow:
+    0 20px 44px rgba(245,158,11,.36),
+    0 0 0 4px rgba(245,158,11,.18);
+}
+
+.btn-outline{
+  background: rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.30);
+  color:#fff !important;
+}
+.btn-outline:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.12);
+  border-color: rgba(255,255,255,.38);
+}
+
+.btn-lg{
+  padding:.95rem 1.15rem;
+  font-size:1.05rem;
+}
+
+.hero-cta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+  margin-top:.85rem;
+}
+
+.cta-sub{
+  font-size:.95rem;
+  opacity:.86;
+  margin-top:.55rem;
+}
+
+/* Mobile: CTA full width */
+@media (max-width:768px){
+  .hero-cta{ gap:.45rem; }
+  .hero-cta .btn{
+    width:100%;
+    text-align:center;
+  }
+  .hero-cta .btn-primary{ font-size:1.1rem; }
+}
+
+/* ---------- 6) Cards ---------- */
+.card{
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  background:#fff;
+  box-shadow: var(--shadow-1);
+  padding: 1rem;
+  position: relative;
+  transition: transform var(--t-med), box-shadow var(--t-med), border-color var(--t-med);
+}
+
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-2);
+  border-color: rgba(245,158,11,.30);
+}
+
+.card h3{
+  margin:0 0 .35rem;
+  font-size:1.08rem;
+  font-weight:900;
+}
+
+.card p{ margin:0; }
+
+/* Liseré accent */
+.card::before{
+  content:"";
+  position:absolute;
+  left:0; top:0; bottom:0;
+  width:4px;
+  border-radius: var(--r-md) 0 0 var(--r-md);
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  opacity:.92;
+}
+
+@media (max-width:768px){
+  .card{ padding:.9rem; }
+  .card h3{ font-size:1.05rem; }
+}
+
+/* ---------- 7) CTA box ---------- */
+.cta-box{
+  margin: 1.15rem 0;
+  padding: 1rem;
+  border-radius: var(--r-md);
+  border: 1px solid rgba(245,158,11,.30);
+  background:
+    radial-gradient(800px 260px at 15% 0%, rgba(245,158,11,.14), transparent 60%),
+    linear-gradient(180deg, rgba(245,158,11,.10), rgba(249,115,22,.06));
+  box-shadow: var(--shadow-1);
+}
+
+/* ---------- 8) Steps ---------- */
+.steps{
+  margin: 1.2rem 0;
+  padding: 1rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(900px 320px at 90% 10%, rgba(245,158,11,.08), transparent 62%),
+    var(--panel);
+}
+
+.steps ol{ margin: .35rem 0 0; padding-left: 1.2rem; }
+.steps li{ margin: .35rem 0; color: var(--text); }
+
+/* ---------- 9) Zone note ---------- */
+.zone-note{
+  margin-top:.5rem;
+  font-size:.95rem;
+  color: rgba(15,23,42,.70);
+}
+
+/* ---------- 10) Avatar ---------- */
+.avatar-img{
+  width: clamp(170px, 38vw, 270px);
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+  object-fit: cover;
+  object-position: 50% 30%;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid rgba(255,255,255,.14);
+  box-shadow: 0 18px 46px rgba(0,0,0,.35);
+}
+
+/* ---------- 11) Quarto petites finitions ---------- */
+hr{ opacity:.16; margin: 1.1rem 0; }
+
+blockquote{
+  margin: .75rem 0;
+  padding: .85rem 1rem;
+  border-left: 4px solid rgba(245,158,11,.60);
+  background:
+    radial-gradient(700px 180px at 0% 0%, rgba(245,158,11,.10), transparent 60%),
+    rgba(15,23,42,.03);
+  border-radius: 14px;
+  color: rgba(15,23,42,.78);
+}
+
+/* Liens dans le contenu */
+main a:not(.btn){
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+main a:not(.btn):hover{
+  color: #c2410c;
+}
+
+/* ---------- 12) Confort mobile ---------- */
+@media (max-width:768px){
+  p{ font-size: 1.06rem; line-height: 1.68; }
+}
+
+/* ---------- 13) FAB mobile (boutons flottants) ---------- */
+@media (max-width:768px){
+  body{ padding-bottom: 96px; }
+
+  .fab-contact{
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    z-index: 1300;
+    display: flex;
+    gap: 10px;
+  }
+
+  .fab-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    border: 0;
+    background: linear-gradient(180deg, var(--accent), var(--accent-2));
+    color: #0b1220;
+    font-weight: 950;
+    padding: .78rem 1rem;
+    border-radius: 999px;
+    box-shadow: 0 16px 36px rgba(245,158,11,.24);
+    transition: transform var(--t-fast), box-shadow var(--t-fast), filter var(--t-fast);
+  }
+
+  .fab-btn:hover{
+    transform: translateY(-1px);
+    filter: saturate(1.05);
+  }
+
+  .fab-btn-alt{
+    background: rgba(11,18,32,.92);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.18);
+    box-shadow: 0 14px 30px rgba(2,6,23,.20);
+  }
+}
+
+/* ---------- 14) Accessibilité ---------- */
+@media (prefers-reduced-motion: reduce){
+  *{ transition: none !important; scroll-behavior: auto !important; }
+}

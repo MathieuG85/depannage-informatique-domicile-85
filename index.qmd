@@ -1,0 +1,111 @@
+---
+title: "Dépannage informatique à domicile – Château d’Olonne"
+---
+
+<!-- Boutons flottants mobile -->
+<div class="fab-contact" aria-label="Contact rapide">
+  <a class="fab-btn" href="tel:+33627101468">Appeler</a>
+  <a class="fab-btn fab-btn-alt" href="sms:+33627101468">SMS</a>
+</div>
+
+::: {.hero-band}
+::: {.container}
+
+::: {.columns .v-center}
+
+::: {.column width="32%"}
+![](profile.jpg){.avatar-img alt="Dépannage informatique à domicile autour du Château d’Olonne" loading="eager"}
+:::
+
+::: {.column width="68%"}
+# Dépannage informatique à domicile  
+Autour du Château d’Olonne {.hero-title}
+
+## PC et Mac  
+Lenteur, virus, comptes bloqués, données perdues {.hero-subtitle}
+
+Intervention à domicile uniquement, dans un rayon d’environ **15–20 km autour du Château d’Olonne**.  
+Ancien responsable technicien SAV Apple : diagnostic clair, travail propre, respect de vos données.
+
+::: {.hero-cta}
+[Appeler](tel:+33627101468){.btn .btn-primary .btn-lg}
+[SMS](sms:+33627101468){.btn .btn-outline .btn-lg}
+:::
+
+::: {.cta-sub}
+Contact par appel ou SMS.  
+Indiquez simplement le type d’ordinateur (PC ou Mac), le problème et votre ville.
+:::
+:::
+
+:::
+:::
+:::
+
+---
+
+## Problèmes pris en charge (PC & Mac)
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6 .card}
+### Ordinateur lent ou instable
+Nettoyage logiciel, démarrage trop long, mises à jour, stockage saturé, optimisation.
+:::
+
+::: {.g-col-12 .g-col-md-6 .card}
+### Virus, pubs, messages suspects
+Suppression complète, sécurisation du système, navigateur, comptes et mots de passe.
+:::
+
+::: {.g-col-12 .g-col-md-6 .card}
+### Comptes bloqués (Apple / Google / Microsoft)
+Récupération d’accès, double authentification, e-mails, iCloud.
+:::
+
+::: {.g-col-12 .g-col-md-6 .card}
+### Photos ou documents perdus
+Récupération de données selon le cas, sauvegardes et prévention.
+:::
+:::
+
+::: {.cta-box}
+Vous ne savez pas d’où vient le problème ?  
+Expliquez-le simplement : je vous dis rapidement si je peux intervenir.  
+[Appeler](tel:+33627101468){.btn .btn-primary}
+:::
+
+---
+
+## Comment ça se passe
+
+::: {.steps}
+1. Vous me contactez (appel ou SMS).
+2. Je vous pose quelques questions et je vous confirme si j’interviens.
+3. Dépannage à domicile : clair, sécurisé, expliqué.
+:::
+
+> Objectif : résoudre le problème et vous laisser une solution simple pour la suite.
+
+---
+
+## Zone d’intervention
+
+À domicile, dans un rayon d’environ **15–20 km autour du Château d’Olonne**.
+
+::: {.zone-note}
+En cas de doute, envoyez votre ville par SMS.
+:::
+
+---
+
+## Contact
+
+::: {.hero-cta}
+[Appeler](tel:+33627101468){.btn .btn-primary .btn-lg}
+[SMS](sms:+33627101468){.btn .btn-outline .btn-lg}
+:::
+
+::: {.cta-sub}
+Réponse rapide.  
+Si ce n’est pas possible ou pas pertinent, je vous le dis honnêtement.
+:::
