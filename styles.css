@@ -6,22 +6,22 @@
 /* ---------- 1) Variables ---------- */
 :root{
   /* Neutres */
-  --ink:#0f172a;                 /* ardoise foncée */
+  --ink:#0f172a;
   --text:rgba(15,23,42,.92);
-  --muted:rgba(15,23,42,.72);
+  --muted:rgba(15,23,42,.74);
   --bg:#ffffff;
   --panel:rgba(15,23,42,.04);
   --border:rgba(15,23,42,.12);
 
   /* Accent jaune/orangé */
-  --accent:#f59e0b;              /* amber */
-  --accent-2:#f97316;            /* orange chaud */
-  --accent-strong:#ea580c;       /* orange plus profond */
+  --accent:#f59e0b;
+  --accent-2:#f97316;
+  --accent-strong:#ea580c;
   --accent-soft:rgba(245,158,11,.18);
 
-  /* Ombres */
-  --shadow-1:0 12px 28px rgba(2,6,23,.12);
-  --shadow-2:0 20px 52px rgba(2,6,23,.18);
+  /* Ombres (un peu adoucies) */
+  --shadow-1:0 10px 22px rgba(2,6,23,.10);
+  --shadow-2:0 18px 44px rgba(2,6,23,.16);
 
   /* Rayons */
   --r-lg:22px;
@@ -34,6 +34,9 @@
   /* Transitions */
   --t-fast:.15s ease;
   --t-med:.20s ease;
+
+  /* Focus */
+  --focus: 0 0 0 4px rgba(245,158,11,.28);
 }
 
 @media (max-width:768px){
@@ -50,6 +53,13 @@ body{
   background:var(--bg);
   line-height:1.62;
   padding-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+main{
+  /* un peu d’air, aide la lisibilité sur desktop */
+  padding-bottom: 2rem;
 }
 
 p, li{ color:var(--muted); }
@@ -60,7 +70,7 @@ h1,h2,h3{
   letter-spacing:-.02em;
 }
 h1{ line-height:1.12; }
-h2{ line-height:1.22; }
+h2{ line-height:1.22; margin-top: 1.4rem; }
 
 a{
   color:var(--accent-strong);
@@ -69,6 +79,13 @@ a{
 a:hover{ text-decoration:underline; text-underline-offset:3px; }
 
 img, iframe, video{ max-width:100%; height:auto; }
+
+/* Focus visible global (meilleure accessibilité) */
+:where(a, button, .btn, input, textarea, select):focus-visible{
+  outline: none;
+  box-shadow: var(--focus);
+  border-radius: 14px;
+}
 
 /* Mobile: éviter les césures bizarres */
 @media (max-width:768px){
@@ -90,7 +107,7 @@ img, iframe, video{ max-width:100%; height:auto; }
   top:0; left:0; right:0;
   z-index:1200;
   background:#0b1220 !important;
-  box-shadow:0 10px 26px rgba(2,6,23,.22);
+  box-shadow:0 10px 26px rgba(2,6,23,.20);
   border-bottom:1px solid rgba(255,255,255,.06);
 }
 
@@ -112,11 +129,11 @@ img, iframe, video{ max-width:100%; height:auto; }
 /* ---------- 4) HERO ---------- */
 .hero-band{
   background:
-    radial-gradient(900px 480px at 70% 15%, rgba(245,158,11,.28), transparent 62%),
-    radial-gradient(600px 380px at 10% 80%, rgba(249,115,22,.18), transparent 60%),
+    radial-gradient(900px 480px at 70% 15%, rgba(245,158,11,.26), transparent 62%),
+    radial-gradient(600px 380px at 10% 80%, rgba(249,115,22,.16), transparent 60%),
     linear-gradient(180deg, #0b1220, #0f172a);
   color:#fff;
-  padding:1.2rem 0 1.05rem;
+  padding: 1.35rem 0 1.2rem;
   box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
 }
 
@@ -125,110 +142,131 @@ img, iframe, video{ max-width:100%; height:auto; }
 }
 
 .hero-title{
-  font-size: clamp(1.65rem, 2.7vw + 1rem, 2.65rem);
-  margin:0 0 .45rem;
-  text-shadow:0 2px 14px rgba(0,0,0,.35);
+  font-size: clamp(1.7rem, 2.7vw + 1rem, 2.7rem);
+  margin:0 0 .35rem;
+  text-shadow:0 2px 14px rgba(0,0,0,.30);
 }
 
 .hero-subtitle{
-  font-size: clamp(1.05rem, 1.2vw + .8rem, 1.45rem);
-  opacity:.94;
-  margin:0 0 .75rem;
+  font-size: clamp(1.05rem, 1.1vw + .8rem, 1.4rem);
+  opacity:.95;
+  margin:0 0 .7rem;
 }
 
-/* Mobile: hero plus compact pour voir les boutons vite */
+/* Mobile: hero compact pour CTA */
 @media (max-width:768px){
-  .hero-band{ padding: 1rem 0 .9rem; }
+  .hero-band{ padding: 1.05rem 0 .95rem; }
   .hero-title{ font-size: 1.55rem; }
   .hero-subtitle{ font-size: 1.05rem; }
 }
 
 /* ---------- 5) CTA / Boutons ---------- */
+/* On évite d’écraser Bootstrap hors de ton contexte :
+   on garde .btn mais on améliore lisibilité + focus */
 .btn{
   border-radius:999px;
-  padding:.82rem 1.1rem;
+  padding:.86rem 1.15rem;
   font-weight:850;
+  letter-spacing: .01em;
   text-decoration:none !important;
-  box-shadow:0 14px 30px rgba(2,6,23,.18);
+  box-shadow: 0 12px 26px rgba(2,6,23,.16);
   transition: transform var(--t-fast), box-shadow var(--t-fast), filter var(--t-fast), background var(--t-fast), border-color var(--t-fast);
+  line-height: 1.1;
 }
 
-.btn:focus-visible{
-  outline:3px solid rgba(245,158,11,.55);
-  outline-offset:2px;
-}
+.btn:active{ transform: translateY(0); }
 
 .btn-primary{
   background: linear-gradient(180deg, var(--accent), var(--accent-2));
   border-color:transparent;
-  color:#0b1220 !important;
+  color:#0b1220 !important; /* très lisible */
   box-shadow:
-    0 16px 36px rgba(245,158,11,.28),
-    0 0 0 0 rgba(245,158,11,.0);
+    0 14px 32px rgba(245,158,11,.26);
 }
 
 .btn-primary:hover{
   transform: translateY(-1px);
-  filter: saturate(1.05);
+  filter: saturate(1.06);
   box-shadow:
-    0 20px 44px rgba(245,158,11,.36),
-    0 0 0 4px rgba(245,158,11,.18);
+    0 18px 42px rgba(245,158,11,.32);
 }
 
 .btn-outline{
-  background: rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.30);
+  background: rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.34);
   color:#fff !important;
+  box-shadow: 0 12px 26px rgba(2,6,23,.14);
 }
 .btn-outline:hover{
   transform: translateY(-1px);
-  background: rgba(255,255,255,.12);
-  border-color: rgba(255,255,255,.38);
+  background: rgba(255,255,255,.14);
+  border-color: rgba(255,255,255,.44);
 }
 
 .btn-lg{
-  padding:.95rem 1.15rem;
-  font-size:1.05rem;
+  padding: 1rem 1.2rem;
+  font-size: 1.06rem;
 }
 
+/* Layout CTA */
 .hero-cta{
   display:flex;
   flex-wrap:wrap;
   gap:.6rem;
-  margin-top:.85rem;
+  margin-top:.7rem;
 }
 
 .cta-sub{
   font-size:.95rem;
-  opacity:.86;
+  opacity:.88;
   margin-top:.55rem;
 }
 
-/* Mobile: CTA full width */
+/* Mobile: CTA pleine largeur */
 @media (max-width:768px){
-  .hero-cta{ gap:.45rem; }
+  .hero-cta{ gap:.5rem; }
   .hero-cta .btn{
     width:100%;
     text-align:center;
   }
-  .hero-cta .btn-primary{ font-size:1.1rem; }
 }
 
-/* ---------- 6) Cards ---------- */
+/* ---------- 6) Grilles / espaces ---------- */
+/* Quarto grid : on force un espace propre */
+.grid{
+  gap: 1rem;
+}
+
+/* ---------- 7) Trust row (petite preuve sous le hero) ---------- */
+.trust-row{
+  margin: 1rem 0 1.1rem;
+  padding: .95rem 1rem;
+  border-radius: var(--r-md);
+  border: 1px solid rgba(245,158,11,.22);
+  background:
+    radial-gradient(900px 240px at 15% 0%, rgba(245,158,11,.10), transparent 60%),
+    rgba(15,23,42,.03);
+  box-shadow: var(--shadow-1);
+  color: rgba(15,23,42,.86);
+}
+
+.trust-row strong{ color: var(--ink); }
+
+/* ---------- 8) Cards ---------- */
 .card{
   border-radius: var(--r-md);
   border: 1px solid var(--border);
   background:#fff;
   box-shadow: var(--shadow-1);
-  padding: 1rem;
+  padding: 1.05rem 1.05rem 1.05rem 1.2rem; /* laisse la place au liseré */
   position: relative;
   transition: transform var(--t-med), box-shadow var(--t-med), border-color var(--t-med);
 }
 
 .card:hover{
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-2);
-  border-color: rgba(245,158,11,.30);
+  border-color: rgba(245,158,11,.28);
 }
 
 .card h3{
@@ -251,25 +289,30 @@ img, iframe, video{ max-width:100%; height:auto; }
 }
 
 @media (max-width:768px){
-  .card{ padding:.9rem; }
+  .card{ padding:1rem 1rem 1rem 1.15rem; }
   .card h3{ font-size:1.05rem; }
 }
 
-/* ---------- 7) CTA box ---------- */
+/* ---------- 9) CTA box ---------- */
 .cta-box{
-  margin: 1.15rem 0;
+  margin: 1.1rem 0;
   padding: 1rem;
   border-radius: var(--r-md);
-  border: 1px solid rgba(245,158,11,.30);
+  border: 1px solid rgba(245,158,11,.28);
   background:
-    radial-gradient(800px 260px at 15% 0%, rgba(245,158,11,.14), transparent 60%),
+    radial-gradient(800px 260px at 15% 0%, rgba(245,158,11,.12), transparent 60%),
     linear-gradient(180deg, rgba(245,158,11,.10), rgba(249,115,22,.06));
   box-shadow: var(--shadow-1);
 }
 
-/* ---------- 8) Steps ---------- */
+/* CTA box boutons : éviter l’effet “tout pareil” */
+.cta-box .btn{
+  box-shadow: 0 10px 22px rgba(2,6,23,.14);
+}
+
+/* ---------- 10) Steps ---------- */
 .steps{
-  margin: 1.2rem 0;
+  margin: 1.15rem 0;
   padding: 1rem;
   border-radius: var(--r-md);
   border: 1px solid var(--border);
@@ -281,16 +324,16 @@ img, iframe, video{ max-width:100%; height:auto; }
 .steps ol{ margin: .35rem 0 0; padding-left: 1.2rem; }
 .steps li{ margin: .35rem 0; color: var(--text); }
 
-/* ---------- 9) Zone note ---------- */
+/* ---------- 11) Zone note ---------- */
 .zone-note{
   margin-top:.5rem;
   font-size:.95rem;
   color: rgba(15,23,42,.70);
 }
 
-/* ---------- 10) Avatar ---------- */
+/* ---------- 12) Avatar ---------- */
 .avatar-img{
-  width: clamp(170px, 38vw, 270px);
+  width: clamp(165px, 34vw, 260px);
   aspect-ratio: 1/1;
   border-radius: 999px;
   object-fit: cover;
@@ -298,11 +341,11 @@ img, iframe, video{ max-width:100%; height:auto; }
   display: block;
   margin: 0 auto;
   border: 4px solid rgba(255,255,255,.14);
-  box-shadow: 0 18px 46px rgba(0,0,0,.35);
+  box-shadow: 0 16px 40px rgba(0,0,0,.30);
 }
 
-/* ---------- 11) Quarto petites finitions ---------- */
-hr{ opacity:.16; margin: 1.1rem 0; }
+/* ---------- 13) Quarto finitions ---------- */
+hr{ opacity:.16; margin: 1.05rem 0; }
 
 blockquote{
   margin: .75rem 0;
@@ -324,12 +367,12 @@ main a:not(.btn):hover{
   color: #c2410c;
 }
 
-/* ---------- 12) Confort mobile ---------- */
+/* ---------- 14) Confort mobile ---------- */
 @media (max-width:768px){
-  p{ font-size: 1.06rem; line-height: 1.68; }
+  p{ font-size: 1.05rem; line-height: 1.7; }
 }
 
-/* ---------- 13) FAB mobile (boutons flottants) ---------- */
+/* ---------- 15) FAB mobile (boutons flottants) ---------- */
 @media (max-width:768px){
   body{ padding-bottom: 96px; }
 
@@ -351,10 +394,11 @@ main a:not(.btn):hover{
     background: linear-gradient(180deg, var(--accent), var(--accent-2));
     color: #0b1220;
     font-weight: 950;
-    padding: .78rem 1rem;
+    padding: .82rem 1.05rem;
     border-radius: 999px;
-    box-shadow: 0 16px 36px rgba(245,158,11,.24);
+    box-shadow: 0 14px 30px rgba(245,158,11,.22);
     transition: transform var(--t-fast), box-shadow var(--t-fast), filter var(--t-fast);
+    min-height: 44px; /* zone tactile */
   }
 
   .fab-btn:hover{
@@ -362,15 +406,63 @@ main a:not(.btn):hover{
     filter: saturate(1.05);
   }
 
+  .fab-btn:focus-visible{
+    box-shadow: var(--focus), 0 14px 30px rgba(245,158,11,.22);
+  }
+
   .fab-btn-alt{
     background: rgba(11,18,32,.92);
     color: #fff;
-    border: 1px solid rgba(255,255,255,.18);
-    box-shadow: 0 14px 30px rgba(2,6,23,.20);
+    border: 1px solid rgba(255,255,255,.20);
+    box-shadow: 0 12px 26px rgba(2,6,23,.18);
   }
 }
 
-/* ---------- 14) Accessibilité ---------- */
+/* ---------- 16) Accessibilité ---------- */
 @media (prefers-reduced-motion: reduce){
   *{ transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* Cache le bouton flottant par défaut (desktop) */
+.fab-contact{ display: none; }
+
+@media (max-width:768px){
+  .hero-title{ letter-spacing: -0.01em; }
+}
+@media (hover:none){
+  .card:hover{ transform:none; box-shadow: var(--shadow-1); }
+  .btn:hover{ transform:none; }
+}
+
+/* =========================================================
+   FIX : .btn-outline visible sur fond clair
+   - Par défaut : outline sombre (pour sections blanches)
+   - Dans le hero : outline clair (pour fond sombre)
+   ========================================================= */
+
+/* Par défaut (fond clair) */
+.btn-outline{
+  background: transparent !important;
+  border: 2px solid rgba(15,23,42,.18) !important;
+  color: var(--ink) !important;
+  box-shadow: 0 10px 22px rgba(2,6,23,.10);
+}
+
+.btn-outline:hover{
+  background: rgba(245,158,11,.10) !important;
+  border-color: rgba(245,158,11,.45) !important;
+  transform: translateY(-1px);
+}
+
+/* Variante : sur hero sombre, on repasse en "outline blanc" */
+.hero-band .btn-outline{
+  background: rgba(255,255,255,.10) !important;
+  border: 2px solid rgba(255,255,255,.34) !important;
+  color: #fff !important;
+  box-shadow: 0 12px 26px rgba(2,6,23,.14);
+}
+
+.hero-band .btn-outline:hover{
+  background: rgba(255,255,255,.14) !important;
+  border-color: rgba(255,255,255,.44) !important;
 }

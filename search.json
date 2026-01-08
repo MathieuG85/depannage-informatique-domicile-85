@@ -7,38 +7,45 @@
     "text": "Appeler SMS"
   },
   {
-    "objectID": "index.html#pc-et-mac",
-    "href": "index.html#pc-et-mac",
+    "objectID": "index.html#section",
+    "href": "index.html#section",
     "title": "Dépannage informatique à domicile – Château d’Olonne",
-    "section": "PC et Mac",
-    "text": "PC et Mac\nLenteur, virus, comptes bloqués, données perdues {.hero-subtitle}\nIntervention à domicile uniquement, dans un rayon d’environ 15–20 km autour du Château d’Olonne.\nAncien responsable technicien SAV Apple : diagnostic clair, travail propre, respect de vos données.\n\nAppeler SMS\n\n\nContact par appel ou SMS.\nIndiquez simplement le type d’ordinateur (PC ou Mac), le problème et votre ville."
+    "section": "",
+    "text": "PC & Mac — Problèmes logiciel / système Autour du Château d’Olonne \n\nAppeler SMS"
   },
   {
-    "objectID": "index.html#problèmes-pris-en-charge-pc-mac",
-    "href": "index.html#problèmes-pris-en-charge-pc-mac",
+    "objectID": "index.html#dépannage-logiciel-système-pc-mac",
+    "href": "index.html#dépannage-logiciel-système-pc-mac",
     "title": "Dépannage informatique à domicile – Château d’Olonne",
-    "section": "Problèmes pris en charge (PC & Mac)",
-    "text": "Problèmes pris en charge (PC & Mac)\n\n\nOrdinateur lent ou instable\nNettoyage logiciel, démarrage trop long, mises à jour, stockage saturé, optimisation.\n\n\nVirus, pubs, messages suspects\nSuppression complète, sécurisation du système, navigateur, comptes et mots de passe.\n\n\nComptes bloqués (Apple / Google / Microsoft)\nRécupération d’accès, double authentification, e-mails, iCloud.\n\n\nPhotos ou documents perdus\nRécupération de données selon le cas, sauvegardes et prévention.\n\n\n\nVous ne savez pas d’où vient le problème ?\nExpliquez-le simplement : je vous dis rapidement si je peux intervenir.\nAppeler"
+    "section": "Dépannage logiciel & système (PC & Mac)",
+    "text": "Dépannage logiciel & système (PC & Mac)\n\n\nOrdinateur lent ou instable\nNettoyage logiciel, optimisation du démarrage, erreurs système, manque d’espace, mises à jour.\n\n\nProblèmes de démarrage\nÉcran noir, blocage au lancement, réparation logicielle, remise en route stable.\n\n\nVirus, publicités, messages suspects\nSuppression complète, sécurisation du système, nettoyage du navigateur.\n\n\nRéglages Mac / Windows\nComptes, sécurité, sauvegardes, réglages système et performances au quotidien.\n\n\n\nUn doute sur le problème ?\nExpliquez simplement ce qui se passe et votre ville.\nAppeler SMS"
+  },
+  {
+    "objectID": "index.html#récupération-de-données-si-possible",
+    "href": "index.html#récupération-de-données-si-possible",
+    "title": "Dépannage informatique à domicile – Château d’Olonne",
+    "section": "Récupération de données (si possible)",
+    "text": "Récupération de données (si possible)\n\n\nPhotos ou documents introuvables\nRecherche dans le système, la corbeille, les sauvegardes, iCloud / OneDrive.\n\n\nDisque externe ou clé USB non reconnu\nDiagnostic, tentative de lecture, copie sécurisée si possible.\n\n\nChangement d’ordinateur\nTransfert propre des données, reprise des comptes, organisation simple.\n\n\nSauvegardes fiables\nMise en place de solutions simples pour éviter les pertes de données.\n\n\n\nLa récupération dépend de l’état du support et du type de panne.\nJe vous dis clairement ce qui est réaliste avant toute intervention."
   },
   {
     "objectID": "index.html#comment-ça-se-passe",
     "href": "index.html#comment-ça-se-passe",
     "title": "Dépannage informatique à domicile – Château d’Olonne",
     "section": "Comment ça se passe",
-    "text": "Comment ça se passe\n\n\nVous me contactez (appel ou SMS).\nJe vous pose quelques questions et je vous confirme si j’interviens.\nDépannage à domicile : clair, sécurisé, expliqué.\n\n\n\nObjectif : résoudre le problème et vous laisser une solution simple pour la suite."
+    "text": "Comment ça se passe\n\n\nVous me contactez (appel ou SMS) : PC/Mac + problème + ville.\nJe vous donne une première orientation claire.\nIntervention à domicile, expliquée et sécurisée."
   },
   {
     "objectID": "index.html#zone-dintervention",
     "href": "index.html#zone-dintervention",
     "title": "Dépannage informatique à domicile – Château d’Olonne",
     "section": "Zone d’intervention",
-    "text": "Zone d’intervention\nÀ domicile, dans un rayon d’environ 15–20 km autour du Château d’Olonne.\n\nEn cas de doute, envoyez votre ville par SMS."
+    "text": "Zone d’intervention\nÀ domicile, autour du Château d’Olonne"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
     "title": "Dépannage informatique à domicile – Château d’Olonne",
     "section": "Contact",
-    "text": "Contact\n\nAppeler SMS\n\n\nRéponse rapide.\nSi ce n’est pas possible ou pas pertinent, je vous le dis honnêtement."
+    "text": "Contact\n\nAppeler SMS"
   }
 ]
