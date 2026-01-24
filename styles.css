@@ -466,3 +466,68 @@ main a:not(.btn):hover{
   background: rgba(255,255,255,.14) !important;
   border-color: rgba(255,255,255,.44) !important;
 }
+
+/* =========================================================
+   MOBILE : afficher FAB + cacher CTA "desktop"
+   ========================================================= */
+
+/* Par défaut (desktop) */
+.fab-contact{ display: none; }
+
+/* Mobile */
+@media (max-width:768px){
+  /* 1) On affiche le bouton flottant */
+  .fab-contact{
+    position: fixed;
+    right: 14px;
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    z-index: 1300;
+    display: flex;
+    gap: 10px;
+  }
+
+  /* 2) On réserve de la place en bas pour ne pas masquer le contenu */
+  body{
+    padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* 3) On cache les boutons "desktop" (hero + sections) */
+  .desktop-cta{
+    display: none !important;
+  }
+
+  /* Optionnel : si tu as des CTA dans des .cta-box */
+  .cta-box .btn{
+    display: none !important;
+  }
+
+  /* Styles du FAB (si tu veux verrouiller la lisibilité) */
+  .fab-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    border: 0;
+    background: linear-gradient(180deg, var(--accent), var(--accent-2));
+    color: #0b1220;
+    font-weight: 950;
+    padding: .82rem 1.05rem;
+    border-radius: 999px;
+    box-shadow: 0 14px 30px rgba(245,158,11,.22);
+    transition: transform var(--t-fast), box-shadow var(--t-fast), filter var(--t-fast);
+    min-height: 44px;
+  }
+
+  .fab-btn:hover{
+    transform: translateY(-1px);
+    filter: saturate(1.05);
+  }
+
+  .fab-btn-alt{
+    background: rgba(11,18,32,.92);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.20);
+    box-shadow: 0 12px 26px rgba(2,6,23,.18);
+  }
+}
+

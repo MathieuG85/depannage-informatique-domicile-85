@@ -1,0 +1,56 @@
+---
+title: "Dépannage Mac à domicile – Château d’Olonne"
+description: "Dépannage Mac / macOS à domicile autour du Château d’Olonne : Mac lent, démarrage, mises à jour bloquées, virus/pub, iCloud, sauvegardes."
+---
+
+::: {.hero-band}
+::: {.container}
+# <span class="hero-title">Dépannage Mac à domicile</span>
+## <span class="hero-subtitle">macOS — lenteurs, démarrage, mises à jour, réglages<br>Autour du Château d’Olonne</span>
+
+::: {.hero-cta}
+[📞 Appeler](tel:+33627101468){.btn .btn-primary .btn-lg}
+[💬 SMS](sms:+33627101468){.btn .btn-outline .btn-lg}
+:::
+::: {.cta-sub}Mac • le problème • votre ville:::
+:::
+:::
+
+::: {.trust-row}
+**Ancien responsable technicien SAV Apple**.  
+Je remets votre Mac **stable, sécurisé et fluide**, en respectant vos données.
+:::
+
+## Cas fréquents sur Mac
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6 .card}
+### Mac trop lent / ventilateur à fond
+Nettoyage logiciel, stockage, démarrage, mises à jour, optimisation.
+:::
+::: {.g-col-12 .g-col-md-6 .card}
+### Mise à jour macOS bloquée
+Diagnostic, réparation logicielle, remise en route propre.
+:::
+::: {.g-col-12 .g-col-md-6 .card}
+### iCloud / sauvegarde / Time Machine
+Réglages, récupération, mise en place d’une sauvegarde fiable.
+:::
+::: {.g-col-12 .g-col-md-6 .card}
+### Safari/Chrome lent, pubs, messages suspects
+Nettoyage navigateur, sécurisation, vérifications.
+:::
+:::
+
+## Comment ça se passe
+::: {.steps}
+1. Vous me contactez : Mac + problème + ville.
+2. Je vous donne une première orientation claire.
+3. Intervention à domicile, propre et expliquée.
+:::
+
+## Contact
+::: {.hero-cta}
+[📞 Appeler](tel:+33627101468){.btn .btn-primary .btn-lg}
+[💬 SMS](sms:+33627101468){.btn .btn-outline .btn-lg}
+:::
