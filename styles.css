@@ -477,3 +477,18 @@ main a:not(.btn):hover{
   .card:hover{ transform:none; box-shadow: var(--shadow-1); }
   .btn:hover{ transform:none; }
 }
+
+@media (max-width:768px){
+  /* Masque le texte du "brand" dans la navbar */
+  .navbar .navbar-brand{
+    display: none !important;
+  }
+}
+
+@media (max-width:768px){
+  .navbar{
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+}
+
