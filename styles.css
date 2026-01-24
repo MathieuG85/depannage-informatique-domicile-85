@@ -491,4 +491,54 @@ main a:not(.btn):hover{
     padding-bottom: .25rem;
   }
 }
+@media (max-width:768px){
+  .avatar-img{
+    border-width: 5px;
+    box-shadow: 0 18px 44px rgba(0,0,0,.35);
+  }
+}
+
+/* MOBILE — masquer le titre de page Quarto (ex: "Sables d’Olonne") */
+@media (max-width:768px){
+  main > h1{
+    display: none !important;
+  }
+}
+/* MOBILE — hero en colonne + avatar plus grand */
+@media (max-width:768px){
+
+  /* 1) Empiler les colonnes du hero (photo au-dessus du texte) */
+  .hero-band .columns{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: .9rem;
+  }
+
+  /* 2) Forcer les colonnes à prendre toute la largeur */
+  .hero-band .column{
+    width: 100% !important;
+  }
+
+  /* 3) Avatar plus grand sur mobile */
+  .avatar-img{
+    width: min(240px, 72vw) !important;
+  }
+
+  /* 4) Un peu d’air et lisibilité */
+  .hero-subtitle{
+    margin-bottom: .2rem;
+  }
+
+  /* 5) (optionnel) réduire la ligne séparatrice si elle existe visuellement */
+  .hero-band hr{
+    margin: .6rem 0;
+  }
+}
+@media (max-width:768px){
+  .hero-band h1{
+    font-size: 1.4rem;
+  }
+}
 
