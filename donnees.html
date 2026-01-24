@@ -2,11 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Récupération de données à domicile autour du Château d’Olonne : photos, documents, disque dur/SSD, disque externe, clé USB. Diagnostic clair. Possibilité selon l’état du support.">
 
 <title>Récupération de données – Château d’Olonne – Dépannage informatique à domicile</title>
 <style>
@@ -35,10 +34,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-74c90939484fe00be8d5db7ece5ff9a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -90,8 +89,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Accueil</span></a>
+    <a class="nav-link" href="./mac.html"> 
+<span class="menu-text">Mac</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./windows.html"> 
+<span class="menu-text">Windows</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./donnees.html" aria-current="page"> 
+<span class="menu-text">Données</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -113,11 +120,6 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">Récupération de données – Château d’Olonne</h1>
 </div>
 
-<div>
-  <div class="description">
-    Récupération de données à domicile autour du Château d’Olonne : photos, documents, disque dur/SSD, disque externe, clé USB. Diagnostic clair. Possibilité selon l’état du support.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -160,7 +162,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>:::</p>
 <hr>
 <div class="trust-row">
 <p>Je vous dis rapidement ce qui est <strong>réaliste</strong> selon le support et la panne.<br>
@@ -214,7 +215,7 @@ Si une récupération est possible, je la tente de façon <strong>prudente</stro
 </section>
 <section id="avant-de-me-contacter-important" class="level2">
 <h2 class="anchored" data-anchor-id="avant-de-me-contacter-important">Avant de me contacter (important)</h2>
-<p>Pour maximiser les chances : - Si le disque fait un bruit anormal ou que le PC “force”, <strong>arrêtez</strong> et n’insistez pas. - Ne relancez pas 20 fois une réparation automatique au hasard. - Si possible, notez : modèle du PC/Mac, type de support (disque externe/clé USB), et ce qui s’est passé juste avant le problème.</p>
+<p>Pour maximiser les chances : - Si le disque fait un bruit anormal ou que le PC “force”, <strong>arrêtez</strong> et n’insistez pas. - Ne relancez pas 20 fois une réparation automatique au hasard. - Si possible, notez le système, type de support (disque externe/clé USB), et ce qui s’est passé juste avant le problème.</p>
 <hr>
 </section>
 <section id="comment-ça-se-passe" class="level2">
@@ -230,8 +231,7 @@ Si une récupération est possible, je la tente de façon <strong>prudente</stro
 </section>
 <section id="zone-dintervention" class="level2">
 <h2 class="anchored" data-anchor-id="zone-dintervention">Zone d’intervention</h2>
-<p>À domicile, autour du <strong>Château d’Olonne</strong> (environ 15–20 km).<br>
-En cas de doute, envoyez simplement votre ville.</p>
+<p>À domicile, autour du <strong>Château d’Olonne</strong> (environ 15–20 km).</p>
 <hr>
 </section>
 <section id="contact" class="level2">
@@ -239,10 +239,6 @@ En cas de doute, envoyez simplement votre ville.</p>
 <!-- CTA desktop : masqués sur mobile via .desktop-cta -->
 <div class="hero-cta desktop-cta">
 <p><a href="tel:+33627101468" class="btn btn-primary btn-lg">Appeler maintenant</a> <a href="sms:+33627101468" class="btn btn-outline btn-lg">Envoyer un SMS</a></p>
-</div>
-<div class="cta-sub">
-<p>Réponse rapide.<br>
-Si ce n’est pas possible ou si ça ne vaut pas le coup, je vous le dis honnêtement.</p>
 </div>
 <!-- Données structurées (SEO local) -->
 <script type="application/ld+json">
@@ -348,6 +344,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -458,6 +456,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
