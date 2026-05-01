@@ -1,0 +1,208 @@
+---
+title: "Configuration iPhone Les Sables d’Olonne – Transfert iPhone et Android vers iPhone Vendée"
+format:
+  html:
+    body-class: page
+---
+
+# Configuration iPhone aux Sables d’Olonne – Vendée
+
+Vous venez d’acheter un nouvel iPhone et vous souhaitez qu’il soit bien configuré dès le départ ?
+
+Transfert depuis un ancien iPhone ou passage d’Android vers iPhone,  
+je vous accompagne directement à domicile aux Sables d’Olonne et en Vendée.
+
+---
+
+## Mise en service d’un nouvel iPhone
+
+Lors de la première configuration, plusieurs éléments sont essentiels :
+
+- création ou récupération de votre identifiant Apple (Apple ID)  
+- réglages de sécurité et confidentialité  
+- configuration Face ID ou code  
+- mise à jour iOS  
+- installation des applications utiles  
+- paramétrage des notifications  
+
+L’objectif est d’avoir un iPhone prêt à être utilisé, simple et sécurisé.
+
+---
+
+## Transfert iPhone vers iPhone
+
+Vous changez d’iPhone ?
+
+Il est possible de transférer :
+
+- contacts  
+- photos et vidéos  
+- messages  
+- applications  
+- réglages  
+
+Le transfert dépend de l’état de votre ancien iPhone et de votre sauvegarde.
+
+---
+
+## Passer d’Android à iPhone
+
+Le passage Android vers iPhone peut être plus complexe.
+
+Je vous aide à transférer :
+
+- contacts  
+- photos  
+- vidéos  
+- comptes mail  
+- certaines applications  
+
+Selon votre ancien téléphone, tout ne peut pas toujours être transféré automatiquement.  
+Une adaptation est parfois nécessaire.
+
+---
+
+## Configuration iCloud et sauvegarde
+
+Un point essentiel pour éviter la perte de données.
+
+Je vous accompagne pour :
+
+- configurer iCloud correctement  
+- synchroniser vos données  
+- sécuriser vos photos  
+- activer les sauvegardes automatiques  
+
+Une bonne configuration permet de retrouver facilement vos données en cas de problème.
+
+---
+
+## Prise en main et explications
+
+Un nouvel iPhone peut demander un temps d’adaptation.
+
+Je vous explique :
+
+- les bases d’iOS  
+- la gestion des applications  
+- l’organisation des photos  
+- les réglages importants  
+- les bonnes pratiques  
+
+L’objectif est que vous soyez à l’aise avec votre iPhone.
+
+---
+
+## Pour qui est ce service ?
+
+- nouvel iPhone  
+- changement d’iPhone  
+- passage Android vers iPhone  
+- besoin d’accompagnement simple  
+- difficulté avec les réglages ou iCloud  
+
+---
+
+## Configuration iPhone à domicile Les Sables d’Olonne
+
+J’interviens à domicile aux Sables d’Olonne et en Vendée.
+
+Ancien responsable technicien SAV Apple,  
+je vous propose une installation claire, sans jargon.
+
+Vous pouvez poser vos questions et avancer à votre rythme.
+
+---
+
+## Zone d’intervention
+
+Configuration iPhone aux Sables d’Olonne et en Vendée :
+
+Les Sables-d’Olonne  
+Olonne-sur-Mer  
+Château-d’Olonne  
+Talmont-Saint-Hilaire  
+Sainte-Foy  
+Brem-sur-Mer  
+L’Île-d’Olonne  
+
+---
+
+## Questions fréquentes
+
+### Peut-on transférer toutes les données vers un nouvel iPhone ?
+Dans la majorité des cas oui, mais cela dépend de la sauvegarde et de l’état de l’ancien appareil.
+
+### Le passage Android vers iPhone est-il compliqué ?
+Cela dépend du téléphone Android. Certaines données peuvent nécessiter une manipulation spécifique.
+
+### Combien de temps dure une configuration iPhone ?
+Cela dépend du transfert de données. Une installation simple peut être rapide, un transfert complet prend plus de temps.
+
+### Est-ce que mes photos seront conservées ?
+Oui si elles sont bien transférées ou synchronisées via iCloud.
+
+---
+
+## Contact
+
+Vous pouvez me contacter par téléphone ou SMS.
+
+Indiquez simplement :
+
+- votre nouvel iPhone  
+- si vous avez un ancien téléphone (iPhone ou Android)  
+- ce que vous souhaitez transférer  
+- votre ville  
+
+Je vous donne une première orientation.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Configuration iPhone Les Sables d’Olonne",
+  "description": "Configuration et transfert de données vers iPhone à domicile aux Sables d’Olonne et en Vendée. Installation, transfert iPhone, migration Android vers iPhone, configuration iCloud.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Assistance iPhone à domicile Les Sables d’Olonne",
+    "telephone": "+33627101468",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Les Sables d’Olonne",
+      "addressRegion": "Vendée",
+      "postalCode": "85100",
+      "addressCountry": "FR"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Les Sables d’Olonne" },
+    { "@type": "City", "name": "Olonne-sur-Mer" },
+    { "@type": "City", "name": "Talmont-Saint-Hilaire" },
+    { "@type": "AdministrativeArea", "name": "Vendée" }
+  ],
+  "serviceType": [
+    "Configuration iPhone",
+    "Installation iPhone",
+    "Transfert iPhone",
+    "Migration Android vers iPhone",
+    "Configuration iCloud",
+    "Assistance iOS"
+  ],
+  "keywords": [
+    "configuration iPhone",
+    "installation iPhone",
+    "transfert iPhone vers iPhone",
+    "passer Android vers iPhone",
+    "configurer iPhone",
+    "configuration iPhone Les Sables d’Olonne",
+    "configuration iPhone Vendée"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "50",
+    "priceCurrency": "EUR",
+    "description": "Intervention à domicile à partir de 50€"
+  }
+}
+</script>

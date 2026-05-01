@@ -1,0 +1,195 @@
+---
+title: "Configuration Mac Les Sables d’Olonne – Installation et prise en main Mac Vendée"
+format:
+  html:
+    body-class: page
+---
+
+# Installation et configuration Mac aux Sables d’Olonne – Vendée
+
+Vous venez d’acheter un Mac et vous souhaitez qu’il soit bien configuré dès le départ ?
+
+MacBook, iMac ou Mac mini : une bonne installation permet d’éviter de nombreux problèmes et de gagner du temps.
+
+Je vous accompagne directement à domicile aux Sables d’Olonne et en Vendée pour une mise en place simple et claire.
+
+---
+
+## Mise en service d’un nouveau Mac
+
+Lors de l’installation, plusieurs éléments sont importants :
+
+- configuration du compte Apple (Apple ID)  
+- réglages de sécurité et confidentialité  
+- installation des mises à jour macOS  
+- paramétrage des sauvegardes (Time Machine)  
+- configuration des mails  
+- installation des applications utiles  
+
+L’objectif est d’avoir un Mac prêt à être utilisé, stable et sécurisé.
+
+---
+
+## Transfert de données vers un nouveau Mac
+
+Vous changez d’ordinateur ?
+
+Il est possible de transférer :
+
+- documents  
+- photos  
+- vidéos  
+- mails  
+- réglages  
+- applications  
+
+Le transfert dépend de votre ancien équipement et de son état.
+
+Dans certains cas, une récupération partielle ou progressive peut être nécessaire.
+
+---
+
+## Prise en main et explications
+
+Un nouveau Mac peut être déroutant, surtout après un PC Windows.
+
+Je prends le temps de vous expliquer :
+
+- les bases de macOS  
+- l’organisation des fichiers  
+- l’utilisation du Finder  
+- les applications principales  
+- les bonnes pratiques pour éviter les problèmes  
+
+L’objectif est que vous soyez autonome avec votre machine.
+
+---
+
+## Configuration iCloud et sauvegarde
+
+Un point essentiel souvent négligé.
+
+Je vous aide à :
+
+- configurer iCloud correctement  
+- synchroniser vos données  
+- sécuriser vos photos et documents  
+- mettre en place une sauvegarde fiable  
+
+Une bonne configuration évite la perte de données.
+
+---
+
+## Pour qui est ce service ?
+
+- nouveau Mac (première utilisation)  
+- changement de PC vers Mac  
+- besoin d’accompagnement simple  
+- difficulté à comprendre macOS  
+- besoin de sécuriser ses données  
+
+---
+
+## Installation Mac à domicile Les Sables d’Olonne
+
+J’interviens à domicile pour vous accompagner directement sur votre machine.
+
+Ancien responsable technicien SAV Apple,  
+je vous propose une installation claire, sans jargon.
+
+Vous pouvez poser vos questions et avancer à votre rythme.
+
+---
+
+## Zone d’intervention
+
+Installation et configuration Mac aux Sables d’Olonne et en Vendée :
+
+Les Sables-d’Olonne  
+Olonne-sur-Mer  
+Château-d’Olonne  
+Talmont-Saint-Hilaire  
+Sainte-Foy  
+Brem-sur-Mer  
+L’Île-d’Olonne  
+
+---
+
+## Questions fréquentes
+
+### Combien de temps dure une installation Mac ?
+Cela dépend de votre situation. Une configuration simple peut être rapide, un transfert de données peut prendre plus de temps.
+
+### Peut-on transférer un ancien PC vers un Mac ?
+Oui, dans de nombreux cas, mais cela dépend du matériel et des données.
+
+### Est-ce que tout est expliqué ?
+Oui, l’objectif est que vous compreniez votre Mac et soyez autonome.
+
+### Est-ce utile même si le Mac est neuf ?
+Oui. Une bonne configuration évite des erreurs et problèmes futurs.
+
+---
+
+## Contact
+
+Vous pouvez me contacter par téléphone ou SMS.
+
+Indiquez simplement :
+
+- votre nouveau Mac  
+- si vous avez un ancien ordinateur  
+- ce que vous souhaitez faire  
+- votre ville  
+
+Je vous donne une première orientation.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Configuration et installation Mac Les Sables d’Olonne",
+  "description": "Installation et configuration de Mac à domicile aux Sables d’Olonne et en Vendée. Mise en service, transfert de données, configuration iCloud et prise en main macOS.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Dépannage Mac à domicile Les Sables d’Olonne",
+    "telephone": "+33627101468",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Les Sables d’Olonne",
+      "addressRegion": "Vendée",
+      "postalCode": "85100",
+      "addressCountry": "FR"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Les Sables d’Olonne" },
+    { "@type": "City", "name": "Olonne-sur-Mer" },
+    { "@type": "City", "name": "Talmont-Saint-Hilaire" },
+    { "@type": "AdministrativeArea", "name": "Vendée" }
+  ],
+  "serviceType": [
+    "Installation Mac",
+    "Configuration Mac",
+    "Prise en main Mac",
+    "Transfert données Mac",
+    "Configuration iCloud",
+    "Assistance macOS"
+  ],
+  "keywords": [
+    "installation Mac",
+    "configuration Mac",
+    "nouveau Mac configuration",
+    "prise en main Mac",
+    "transfert données Mac",
+    "installation Mac Les Sables d’Olonne",
+    "configuration Mac Vendée"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "50",
+    "priceCurrency": "EUR",
+    "description": "Intervention à domicile à partir de 50€"
+  }
+}
+</script>
